@@ -8,22 +8,16 @@ The proposed ‘IntelliWatch’ application integrates video and audio processin
 Through the application's interactive user interface, users can engage with the fine-tuned large language model to ask questions related to the video content. To reduce cognitive load for users, the interface provides options to review previous conversations with the system.
 The core AI techniques powering the video summarization and question answering capabilities are video-frame captioning, audio transcription, and key-frame extraction. By leveraging state-of-the-art large language models, the system can effectively analyze long temporal context from the video and generate abstractive summaries and meaningful insights. This allows for an interactive conversation with the video content rather than passive watching.
 The proposed IntelliWatch application enables generating concise summaries by extracting key frames, captioning them, and transcribing audio to build a rich contextual database for each video. This context is processed by the large language model to produce succinct summarizations. The conversational interface allows users to efficiently interact with the video content by asking questions and accessing insights from the video context, without needing to watch the full video.
-![Alt text](https://github.com/niknarra/IntelliWatch/blob/main/IntelliWatch%20pipeline.png)
-[Project Live Demo](https://IntelliWatchapp2.streamlit.app/)
-[Project Demo on YouTube](https://www.youtube.com/watch?v=AZgzeEoIaEM)
 
 ## Running the code in your local environment:
 #### Dependency Installation
 * Make sure you have Python > 3.9
 * Install the dependecies using ``` pip install -r requirements.txt ```
 * Once the dependecies are insstalled, run ```streamlit run .\complete_IntelliWatch_demo_V10.py```
-* The full end-end application is present at [IntelliWatch 2.0](https://IntelliWatchapp2.streamlit.app/), the above, ```streamlit run .\complete_IntelliWatch_demo_V10.py``` code is just a reference for other users to build further extensions.
+* Run ```streamlit run .\complete_IntelliWatch_demo_V11.py``` code is just a reference for other users to build further extensions.
 
 ## Application Workflow
-* visit [IntelliWatch 2.0](https://IntelliWatchapp2.streamlit.app/)
-* sign up if you are a new user
-* once signed up, please login into the application, if wrong password is entered please rfresh the page
-* once logged into the application, a video repository page greets you, please select a video which you like
+* a video repository page greets you, please select a video which you like
 * now in the next page, you can a see a brief summary of the video, chat window, and 3 keywords with corresposing prompts.
 * these keyowrds and prmpts act as a guidance for you to ask questions, you can ask other questions as well
 * in the chat window, ask any question, our applcation responds with an answer, and along with the asnwer you will be provided with a list of timestamps related to the asnwer, click on them to automatically watch the specific parts of the video.  
